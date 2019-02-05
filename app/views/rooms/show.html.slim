@@ -1,0 +1,11 @@
+h1
+  | Chat Room
+
+form id="test_form"
+  input type="text" id="content"
+  input type="file" id="picture"
+
+/ render @messagesはパーシャル用ファイルの
+/ _message.html.slimに展開されます。
+#messages
+  = render @messages

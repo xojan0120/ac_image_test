@@ -1,0 +1,5 @@
+.message
+  p
+    = message.content
+    - if message.picture?
+      = image_tag message.picture.url
